@@ -1,0 +1,127 @@
+.game_container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu__container {
+    display: grid;
+    width: 100vw;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 65px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+   
+}
+
+.game__button {
+    padding: 13px 25px;
+    
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 40px;
+    color: var(--color-white);
+    text-align: center;
+    background-color: var(--color-bg-variant);
+
+}
+
+.menu__button {
+    width: 100px;
+}
+
+.restart__button {
+    width: 115px;
+}
+
+.menu__container .main__logo{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 2px;
+
+}
+
+.game{
+    position: relative;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.player__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140px;
+    height: 165px;
+    margin: 45px;
+    border-radius: 20px;
+    border: 3px solid;
+    border-bottom: 15px solid;
+    background-color: var(--color-white);
+}
+
+.player__card img {
+    position: absolute;
+    width: 50px;
+    left: calc(50% - 25px);
+    top: -25px
+}
+
+.player__card h2 {
+    margin-top: 32px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.player__card p {
+    font-size: 5.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.game{
+    position: relative;
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game__board{
+    position: relative;
+}
+
+.black-board{
+    position: absolute;
+    left: 0;
+    top: 1.5px;
+    z-index: -1; 
+}
+
+.winner-color {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    z-index: -2;
+    border-radius: 60px 60px 0 0;
+    background-color: var(--color-bg-variant);
+}
+
+.timer__container{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

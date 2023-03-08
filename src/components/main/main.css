@@ -1,0 +1,53 @@
+.main__container{
+    width: 60vw;
+    max-width: 600px;
+    padding-bottom: 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid var(--color-dark);
+    border-bottom: 10px solid var(--color-dark);
+    background-color: var(--color-bg);
+  }
+  
+  
+  .main__logo{
+    margin: 60px auto 30px auto;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .main__button{
+    width: 40vw;
+    max-width: 500px;
+    height: 60px;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid var(--color-dark);
+    border-bottom: 8px solid var(--color-dark);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-dark)
+  }
+  
+  .button-pink {
+    background-color: var(--color-red);
+  }
+  
+  .button-yellow {
+    background-color: var(--color-yellow);
+  }
+  
+  .button-withe {
+    background-color: var(--color-white);
+  }
+  
+  .button__icon {
+    width: 60px;
+  }
