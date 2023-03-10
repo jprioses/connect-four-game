@@ -4,13 +4,16 @@ import LOGO from '../../assets/main-logo.png'
 import './game.css'
 import {ReactComponent as LargeWhiteBoard }from '../../assets/board-white-large.svg'
 import {ReactComponent as LargeBlackBoard} from '../../assets/board-black-large.svg'
-import timer from '../../assets/timer-1.svg'
+import TIMER from '../../assets/timer-1.svg'
 import PLAYER1 from '../../assets/player-1.png'
 import PLAYER2 from '../../assets/player-2.png'
-import { Timer } from './Timer'
+import { Grid } from './Grid'
+
 // import PLAYERCPU from '../../assets/player-cpu.png'
 
 const Game = () => {
+
+  
   return (
     <div className='container game_container'>
       <div className='menu__container'>
@@ -19,7 +22,7 @@ const Game = () => {
         <button className='game__button restart__button'>RESTART</button>
       </div>
 
-      <div className='game'>
+      <div className='game__container'>
         <article className='player__card player-1-card'>
           <img src={PLAYER1} alt="" />
           <h2>PLAYER 1</h2>
@@ -29,6 +32,9 @@ const Game = () => {
         <div className='game__board'>
           <LargeWhiteBoard className='white-board'/>
           <LargeBlackBoard className='black-board'/>
+          
+          <Grid/>
+
         </div>
     
         <article className='player__card player-2-card'>
@@ -36,18 +42,17 @@ const Game = () => {
           <h2>PLAYER 2</h2>
           <p>0</p>
         </article>
+
+        <div className='timer__container'>
+          <div className='timer' style={{ backgroundImage: `url(${TIMER})` }}>
+              <h2>PLAYER 1'S TURN</h2>
+              <p>30s</p>
+          </div>
+        </div>
       </div>
 
       <div className='winner-color'></div>
 
-     <div className='timer__container' style={{ backgroundImage: `url(${timer})` }}>
-        <h2>PLAYER 1'S TURN</h2>
-        <p>30s</p>
-     </div>
-     
-      
-      
-      
     </div>
   )
 }
