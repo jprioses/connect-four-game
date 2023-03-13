@@ -100,65 +100,7 @@
 }
 
 
-.game__board .column-1 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 10px;
-}
 
-.game__board .column-2 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 98px;
-}
-
-.game__board .column-3 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 186px;
-}
-
-.game__board .column-4 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 274px;
-}
-
-.game__board .column-5 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 362px;
-}
-
-.game__board .column-6 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 450px;
-}
-
-.game__board .column-7 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 538px;
-}
-
-.disk {
-    z-index: -3;
-}
 
 .winner-color {
     position: absolute;
@@ -178,6 +120,10 @@
     left: calc(50% - 100px);
     color: var(--color-white);
     
+}
+
+.timer-2 {
+    color: var(--color-dark);
 }
 
 .timer {
@@ -203,7 +149,3 @@
     left: 30%
 }
 
-.test-disk-container {
-    position: absolute;
-    z-index: -1;
-}
