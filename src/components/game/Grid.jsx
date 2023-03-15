@@ -1,42 +1,41 @@
-import React, { useEffect} from 'react'
+import React, { useEffect } from 'react'
 import {ReactComponent as PLAYER2DISK} from '../../assets/player-2-disk.svg'
 import {ReactComponent as PLAYER1DISK} from '../../assets/player-1-disk.svg'
 import { motion } from 'framer-motion'
-import { usePlay } from './game'
 import './grid.css'
 
-function Grid() {
+const Grid = ({grid,row,column,play,setNewDisk,updateGrid,changePlayer}) => {
 
-    const {grid, column, row, play ,updateGrid,changePlayer, setNewDisk} = usePlay()
-    
     const gridPositionRow = [16,104,192,280,368,456]
     const gridPositionColumn = [18,105,193,281,369,457,545]
+
+    useEffect(() => {
+        updateGrid()
+        //eslint-disable-next-line react-hooks/exhaustive-deps
+    },[row, column] )
+
 
     const renderDisk = () => {
         return grid.map((arrayRow, rowIndex) => {
             return arrayRow.map((array, columnIndex) => {
                 if (array=== 1) {
-                    return (<motion.svg className='disk'key={rowIndex + columnIndex} animate={{top: gridPositionRow[rowIndex], left: gridPositionColumn[columnIndex]} }><PLAYER1DISK height='70' width='70'/></motion.svg>)
+                    return (<motion.svg className='disk' key={rowIndex + columnIndex} style={{top: gridPositionRow[rowIndex], left: gridPositionColumn[columnIndex]} }><PLAYER1DISK height='70' width='70'/></motion.svg>)
                 }
                 else if (array=== 2) {
-                    return (<motion.svg className='disk' key={rowIndex + columnIndex} animate={{top: gridPositionRow[rowIndex], left: gridPositionColumn[columnIndex]}}><PLAYER2DISK height='70' width='70'/></motion.svg>)
+                    return (<motion.svg className='disk' key={rowIndex + columnIndex} style={{top: gridPositionRow[rowIndex], left: gridPositionColumn[columnIndex]}}><PLAYER2DISK height='70' width='70'/></motion.svg>)
                 }else {return (null) }})
             })   
     }
 
-    useEffect(() => {
-        updateGrid()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [column, row])
+    
     
     const variants = {
-       
+
         drop: {
-            left: gridPositionColumn[column],
             top: [0,gridPositionRow[row]],
             
             transition: {
-                duration: 0.5,
+                duration: 0.3,
             },
         },
     }
@@ -74,12 +73,12 @@ function Grid() {
         { renderDisk()}
         
         {row != null  && column != null && play===1 &&
-        <motion.svg variants={variants}  animate={'drop'} className='test-disk-container'>
+        <motion.svg variants={variants} animate={'drop'} className='test-disk-container' style={{left: gridPositionColumn[column]}}>
             <PLAYER1DISK  width='70' height='70'/>
         </motion.svg>
         }
-            {row != null  && column != null && play===2 &&
-        <motion.svg variants={variants}  animate={'drop'} className='test-disk-container'>
+        {row != null  && column != null && play===2 &&
+        <motion.svg variants={variants} animate={'drop'} className='test-disk-container' style={{left: gridPositionColumn[column]}}>
             <PLAYER2DISK  width='70' height='70'/>
         </motion.svg>
         }
@@ -89,4 +88,4 @@ function Grid() {
   )
 }
 
-export {Grid}
+export  {Grid}

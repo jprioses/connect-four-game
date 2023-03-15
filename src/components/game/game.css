@@ -1,10 +1,9 @@
 .game_container {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 
 .menu__container {
@@ -16,7 +15,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-   
 }
 
 .game__button {
@@ -27,7 +25,6 @@
     color: var(--color-white);
     text-align: center;
     background-color: var(--color-bg-variant);
-
 }
 
 .menu__button {
@@ -43,7 +40,6 @@
     height: 60px;
     margin: 0 auto;
     padding: 2px;
-
 }
 
 .game__container{
@@ -73,7 +69,7 @@
     position: absolute;
     width: 50px;
     left: calc(50% - 25px);
-    top: -25px
+    top: -25px;
 }
 
 .player__card h2 {
@@ -99,13 +95,10 @@
     z-index: -1; 
 }
 
-
-
-
 .winner-color {
     position: absolute;
     width: 100%;
-    height:calc(50vh - 245px);
+    height:calc(50% - 245px);
     bottom: 0;
     z-index: -2;
     border-radius: 60px 60px 0 0;
@@ -115,11 +108,10 @@
 .timer__container{
     position: absolute;
     width: 200px;
-    height: 200px;
-    bottom:-140px;
+    height: 151px;
+    bottom: calc(50% - 398px);
     left: calc(50% - 100px);
     color: var(--color-white);
-    
 }
 
 .timer-2 {
@@ -137,15 +129,19 @@
 
 .timer h2 {
     position: absolute;
+    width: 100%;
     top: 30%;
-    left: 30px;
+    left: 0;
+    text-align: center;
 }
 
 .timer p {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 0;
     font-size: 5.5rem;
     font-weight: 600;
-    position: absolute;
-    top: 45%;
-    left: 30%
+    text-align: center;
 }
 
