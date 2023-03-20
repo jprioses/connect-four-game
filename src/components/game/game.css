@@ -32,9 +32,18 @@
     background-color: var(--color-bg-variant);
 }
 
+.menu__button:hover {
+    background-color: var(--color-red);
+}
+
 .restart__button {
     width: 115px;
     background-color: var(--color-bg-variant);
+    cursor: pointer;
+}
+
+.restart__button:hover {
+    background-color: var(--color-red);
 }
 
 .menu__container .main__logo{
@@ -46,7 +55,7 @@
 
 .game__container{
     position: relative;
-    margin: 45px 0 105px 0;
+    margin: 76px 0 136px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -196,4 +205,9 @@
     top: 60%;
     left: calc(50% - 67px);
     background-color: var(--color-bg-variant);
+}
+
+.winner button:hover {
+    background-color: var(--color-red);
+    cursor: pointer;
 }

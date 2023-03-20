@@ -26,7 +26,8 @@ const Game = () => {
           player1Wins, 
           player2Wins, 
           setWhoWins, 
-          playAgain } = usePlay()
+          playAgain,
+          wait } = usePlay()
   
   return (
     <div className='container game_container'>
@@ -50,7 +51,9 @@ const Game = () => {
           
           <Grid grid={grid} 
                 setNewDisk={setNewDisk} 
-                winner={winner}/>
+                winner={winner}
+                wait={wait}
+                player={player}/>
 
         </div>
     
@@ -65,8 +68,8 @@ const Game = () => {
                             setTimerCounter={setTimerCounter}
                             setWhoWins={setWhoWins}/>}
 
-        { winner && <Winner  winner={winner} 
-                            playAgain={playAgain}/>}
+        { winner && !wait && <Winner  winner={winner} 
+                                      playAgain={playAgain}/>}
         
       </div>
 
@@ -76,4 +79,4 @@ const Game = () => {
   )
 }
 
-export default Game
+export {Game}

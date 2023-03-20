@@ -1,10 +1,6 @@
-
-
-import Main from './components/main/Main';
-import Game from './components/game/Game';
-import {  Route, Routes } from 'react-router-dom';
-
-
+import {Main} from './components/main/Main';
+import {Game} from './components/game/Game';
+import { Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
@@ -17,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export {App};
