@@ -7,8 +7,8 @@ const Timer = ({player, timerCounter, setTimerCounter, setWhoWins}) => {
    useEffect(() => {
      const timer =
      timerCounter > 0 && setInterval(() => setTimerCounter(timerCounter - 1), 1000)
-     timerCounter === 0 && player === 1 && setWhoWins(2)
-     timerCounter === 0 && player === 2 && setWhoWins(1)
+     timerCounter === 0 && player === 1 && setWhoWins(2, false)
+     timerCounter === 0 && player === 2 && setWhoWins(1, false)
 
      return () => clearInterval(timer)
       //eslint-disable-next-line react-hooks/exhaustive-deps
