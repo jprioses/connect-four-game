@@ -1,10 +1,16 @@
-import React  from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import LOGO from '../../assets/main-logo.png'
 
 import './game.css'
-import {ReactComponent as LargeWhiteBoard }from '../../assets/board-white-large.svg'
-import {ReactComponent as LargeBlackBoard} from '../../assets/board-black-large.svg'
+//import {ReactComponent as LargeWhiteBoard }from '../../assets/board-white-large.svg'
+//import {ReactComponent as LargeBlackBoard} from '../../assets/board-black-large.svg'
+
+//import {ReactComponent as SmallWhiteBoard }from '../../assets/board-white-small.svg'
+//import {ReactComponent as SmallBlackBoard} from '../../assets/board-black-small.svg'
+
+import WITHEBOARD from '../../assets/board-white-large.svg'
+import BLACKBOARD from '../../assets/board-black-large.svg'
 
 import PLAYER1 from '../../assets/player-1.png'
 import PLAYER2 from '../../assets/player-2.png'
@@ -18,7 +24,7 @@ import { Modal } from '../modal/Modal'
 
 const Game = () => {
 
-  
+  const width = window.innerWidth
 
   const { grid, 
           setNewDisk, 
@@ -52,9 +58,14 @@ const Game = () => {
 
         <div className='game__board'>
 
-          <LargeWhiteBoard className='white-board'/>
-          <LargeBlackBoard className='black-board'/>
           
+          {//<LargeWhiteBoard className='white-board'/>
+          //<LargeBlackBoard className='black-board'/>}
+          }       
+          
+          <div className='white-board' style={{ backgroundImage: `url(${WITHEBOARD})`}}></div>
+          <div className='black-board' style={{ backgroundImage: `url(${BLACKBOARD})`}}></div>
+
           <Grid grid={grid} 
                 setNewDisk={setNewDisk} 
                 winner={winner}

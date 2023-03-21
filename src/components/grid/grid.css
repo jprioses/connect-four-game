@@ -1,68 +1,46 @@
-.game__board .column-1 {
+.game__board .column {
     position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 10px;
+    width: 13.45%;
+    height: 100%;
+    top: 0;
+}
+
+
+.game__board .column-1 {
+    left: 1.58%;
 }
 
 .game__board .column-2 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 98px;
+    left: 15.5%;
 }
 
 .game__board .column-3 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 186px;
+    left: 29.43%;
 }
 
 .game__board .column-4 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 274px;
+    left: 43.35%;
 }
 
 .game__board .column-5 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 362px;
+    left: 57.28%;
 }
 
 .game__board .column-6 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 450px;
+    left: 71.20%;
 }
 
 .game__board .column-7 {
-    position: absolute;
-    width: 85px;
-    height: 584px;
-    top: 10px;
-    left: 538px;
+    left: 85.12%;
 }
 
 .disk {
     position: absolute;
     z-index: -1;
+    width: 11.08%;
+    height: 11.98%;
 }
 
-.test-disk-container {
-    position: absolute;
-    z-index: -1;
-}
 
 .marker {
     position: absolute;
@@ -76,3 +54,4 @@
     height: 40px;
     width: 40px;
 }
+

@@ -1,42 +1,53 @@
-.main__container{
+.main__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-variant);
+}
+
+.main__content{
     width: 60vw;
-    max-width: 600px;
-    padding-bottom: 50px;
-    margin: 50px auto;
+    height: 80vh;
+    max-height: 600px;
+    max-width: 450px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-radius: 30px;
-    border: 2px solid var(--color-dark);
-    border-bottom: 10px solid var(--color-dark);
+    border-radius: 40px;
+    border: 3px solid var(--color-dark);
+    border-bottom: 15px solid var(--color-dark);
     background-color: var(--color-bg);
   }
   
-  
   .main__logo{
-    margin: 60px auto 30px auto;
+    margin: 40px auto 80px auto;
     width: 50px;
     height: 50px;
   }
   
   .main__button{
-    width: 40vw;
-    max-width: 500px;
-    height: 60px;
+    width: 80%;
+    min-width: 300px;
+    height: 80px;
     margin: 10px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    border: 2px solid var(--color-dark);
-    border-bottom: 8px solid var(--color-dark);
-    font-size: 1.8rem;
+    border: 3px solid var(--color-dark);
+    border-bottom: 12px solid var(--color-dark);
+    font-size: 2rem;
     font-weight: 600;
     color: var(--color-dark)
   }
   
   .button-pink {
+    color: var(--color-white);
     background-color: var(--color-red);
   }
   
@@ -50,4 +61,13 @@
   
   .button__icon {
     width: 60px;
+  }
+
+  @media (max-width: 640px) { 
+    .main__container {
+      background-color: var(--color-bg);
+    }
+    .main__content {
+      border: none;
+    }
   }

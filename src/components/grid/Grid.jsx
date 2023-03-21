@@ -21,10 +21,10 @@ const Grid = ({grid,setNewDisk, winner, wait, player, winnerPos}) => {
             return arrayRow.map((array, columnIndex) => {
                 counter += 1
                 if (array=== 1) {
-                    return (<motion.svg className='disk' animate={{top: [0,gridPositionRow[rowIndex]], transition:{duration:0.5}}} key={counter} style={{ left: gridPositionColumn[columnIndex]}}><PLAYER1DISK height='70' width='70'/></motion.svg>)
+                    return (<motion.svg className='disk' animate={{top: [0,gridPositionRow[rowIndex]], transition:{duration:0.5}}} key={counter} style={{ left: gridPositionColumn[columnIndex]}}><PLAYER1DISK height='100%' width='100%'/></motion.svg>)
                 }
                 else if (array=== 2) {
-                    return (<motion.svg className='disk' animate={{top:[0, gridPositionRow[rowIndex]], transition:{duration:0.5}}} key={counter} style={{ left: gridPositionColumn[columnIndex]}}><PLAYER2DISK height='70' width='70'/></motion.svg>)
+                    return (<motion.svg className='disk' animate={{top:[0, gridPositionRow[rowIndex]], transition:{duration:0.5}}} key={counter} style={{ left: gridPositionColumn[columnIndex]}}><PLAYER2DISK height='100%' width='100%'/></motion.svg>)
                 }else {return (null) }})
             })   
     }

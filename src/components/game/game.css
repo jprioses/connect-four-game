@@ -97,13 +97,27 @@
 
 .game__board{
     position: relative;
+    
+}
+
+.white-board {
+    width: 632px;
+    height: 584px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .black-board{
     position: absolute;
+    width: 632px;
+    height: 594px;
     left: 0;
     top: 1.4px;
     z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .winner-color {
@@ -124,5 +138,98 @@
     background-color: var(--color-yellow);
 }
 
+@media (max-width: 1060px) {
 
+    .menu__container {
+        margin-top: 10px;
+    }
+    .game__container {
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
 
+    .player__card {
+        order: 1;
+        width: 280px;
+        height: 100px;
+        margin: 20px;
+        border-bottom: 12px solid;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .player__card p {
+        align-self: center;
+    }
+
+    .player-1-card img{
+        left: -25px;
+        top: calc(50% - 30px)
+
+    }
+
+    .player-2-card img{
+        left: auto;
+        right: -25px;
+        top: calc(50% - 30px)
+
+    }
+
+    .player-2-card h2{
+        order: 2;
+    }
+
+    .player-2-card p{
+        order: 1;
+    }
+
+    .game__board {
+        order: 2;
+    }
+
+    .winner-color {
+        height: calc(50% - 290px);;
+    }
+
+    
+}
+
+@media (max-width: 640px) {
+   
+    .player__card {
+        width: 40%;
+        height: 12vh;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .player__card h2 {
+        order: 1;
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .player__card p{
+        order: 2;
+        font-size: 4.5rem;
+    }
+   
+    .white-board{
+        width: 95vw;
+        min-width: 304px;
+        height: 88.3vw;
+        min-height: 282.56px;
+    }
+
+    .black-board {
+        width: 95vw;
+        min-width: 304px;
+        height: 89.6vw;
+        min-height: 286.72px;
+    }
+
+    .winner-color {
+        height: calc(50% - 48vw);;
+    }
+
+}

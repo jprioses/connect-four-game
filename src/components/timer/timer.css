@@ -37,3 +37,15 @@
     font-weight: 600;
     text-align: center;
 }
+
+@media (max-width: 1060px) { 
+    .timer__container {
+        bottom: calc(50% - 480px);
+    }
+}
+
+@media (max-width: 640px) {
+    .timer__container {
+        bottom: -15.5vh
+    }
+}

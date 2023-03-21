@@ -45,3 +45,15 @@
     background-color: var(--color-red);
     cursor: pointer;
 }
+
+@media (max-width: 1060px) { 
+    .winner__container {
+        bottom: calc(50% - 500px);
+    }
+}
+
+@media (max-width: 640px) {
+    .winner__container {
+        bottom: -17vh
+    }
+}
