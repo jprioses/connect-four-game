@@ -1,6 +1,6 @@
 import React from 'react'
 import WINNER from '../../assets/winner.svg'
-
+import './winner.css'
 
 const Winner = ({winner, playAgain}) => {
 

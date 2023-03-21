@@ -1,0 +1,39 @@
+.timer__container{
+    position: absolute;
+    width: 200px;
+    height: 165px;
+    bottom: calc(50% - 410px);
+    left: calc(50% - 100px);
+    color: var(--color-white);
+}
+
+.timer-2 {
+    color: var(--color-dark);
+}
+
+.timer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.timer h3 {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 0;
+    text-align: center;
+}
+
+.timer p {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 0;
+    font-size: 5.5rem;
+    font-weight: 600;
+    text-align: center;
+}
