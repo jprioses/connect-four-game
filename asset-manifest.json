@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/connect-four-game/static/css/main.23967188.css",
+    "main.js": "/connect-four-game/static/js/main.8cd7ec9f.js",
+    "static/media/board-black.svg": "/connect-four-game/static/media/board-black.b99860fbd97ad0aa6c1fd0ff6152baa8.svg",
+    "static/media/board-white.svg": "/connect-four-game/static/media/board-white.bc2b55762e7bc4c3a93bd185b93a86bd.svg",
+    "static/media/marker-1.svg": "/connect-four-game/static/media/marker-1.faa9e28e9c3ef80e43f6327455c583d7.svg",
+    "static/media/marker-2.svg": "/connect-four-game/static/media/marker-2.4f36358a1622b4b94ce0aca8d35b79bf.svg",
+    "static/media/timer-1.svg": "/connect-four-game/static/media/timer-1.2f621fdd498db00bd1a406d75bb91ff9.svg",
+    "static/media/timer-2.svg": "/connect-four-game/static/media/timer-2.1da7b08cc0e15e3321e35bdafb4cd733.svg",
+    "index.html": "/connect-four-game/index.html",
+    "static/media/winner.svg": "/connect-four-game/static/media/winner.926d50db6523165de4ca7bf426785cf5.svg",
+    "static/media/player-1-disk.svg": "/connect-four-game/static/media/player-1-disk.4cbe8e3f81329f7964cebcdce6c67e34.svg",
+    "static/media/player-2-disk.svg": "/connect-four-game/static/media/player-2-disk.ffc2a6fe19bb1959b6504b135122e30f.svg",
+    "static/media/winner-circle.svg": "/connect-four-game/static/media/winner-circle.fa50baf8a44d55672f1cf91dd13d7d64.svg",
+    "static/media/ok.svg": "/connect-four-game/static/media/ok.cf0fe5e2a3e63921e6b99764cc82a796.svg",
+    "main.23967188.css.map": "/connect-four-game/static/css/main.23967188.css.map",
+    "main.8cd7ec9f.js.map": "/connect-four-game/static/js/main.8cd7ec9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23967188.css",
+    "static/js/main.8cd7ec9f.js"
+  ]
+}
