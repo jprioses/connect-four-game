@@ -45,6 +45,10 @@
     font-weight: 600;
     color: var(--color-dark)
   }
+
+  .main__button:hover {
+    border-color: var(--color-bg-variant);
+  }
   
   .button-pink {
     color: var(--color-white);

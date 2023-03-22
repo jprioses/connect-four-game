@@ -60,3 +60,9 @@
     background-color: var(--color-red);
     padding: 20px;
 }
+
+@media (max-width: 640px) {
+    .modal__content {
+        width: 90%;
+    }
+}

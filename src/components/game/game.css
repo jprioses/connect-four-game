@@ -1,4 +1,4 @@
-.game_container {
+.game-container {
     position: relative;
     display: flex;
     min-height: 100vh;
@@ -8,17 +8,17 @@
 
 .menu__container {
     display: grid;
-    width: 100vw;
+    width: 90vw;
     max-width: 750px;
-    min-width: 320px;
+    min-width: 310px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
     align-items: center;
 }
 
 .game__button {
-    padding: 10px 22px;
+    width: 110px;
+    padding: 10px 20px;
     font-size: 1.5rem;
     font-weight: 600;
     border-radius: 40px;
@@ -28,7 +28,6 @@
 }
 
 .menu__button {
-    width: 100px;
     background-color: var(--color-bg-variant);
 }
 
@@ -37,7 +36,6 @@
 }
 
 .restart__button {
-    width: 115px;
     background-color: var(--color-bg-variant);
     cursor: pointer;
 }
@@ -196,9 +194,14 @@
 
 @media (max-width: 640px) {
    
+    .game__container{
+        margin-bottom: 180px;
+    }
+
     .player__card {
-        width: 40%;
-        height: 12vh;
+        width: 38%;
+        height: 12vw;
+        min-height: 100px;
         margin: 10px;
         flex-direction: column;
     }
@@ -229,7 +232,7 @@
     }
 
     .winner-color {
-        height: calc(50% - 48vw);;
+        height: calc(50% - 40vw)
     }
 
 }

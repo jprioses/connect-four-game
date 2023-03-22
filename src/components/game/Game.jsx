@@ -42,7 +42,7 @@ const Game = () => {
         setPause } = usePlay()
   
   return (
-    <div className='container game_container'>
+    <div className='container game-container'>
       <div className='menu__container'>
         <button className='game__button menu__button' onClick={() => setPause(true)}>MENU</button>
         <img className='main__logo' src={LOGO} alt="" />
@@ -71,7 +71,8 @@ const Game = () => {
                 winner={winner}
                 wait={wait}
                 player={player}
-                winnerPos={winnerPos}/>
+                winnerPos={winnerPos}
+                width={width}/>
 
         </div>
     
@@ -91,6 +92,8 @@ const Game = () => {
                                       playAgain={playAgain}/>}
         
       </div>
+
+      
 
       <div className={ (winner===1) ? 'winner-color winner-red' : ((winner===2)) ? 'winner-color winner-yellow' : 'winner-color'}></div>
 
