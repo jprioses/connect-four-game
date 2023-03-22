@@ -3,14 +3,8 @@ import { Link } from 'react-router-dom'
 import LOGO from '../../assets/main-logo.png'
 
 import './game.css'
-//import {ReactComponent as LargeWhiteBoard }from '../../assets/board-white-large.svg'
-//import {ReactComponent as LargeBlackBoard} from '../../assets/board-black-large.svg'
-
-//import {ReactComponent as SmallWhiteBoard }from '../../assets/board-white-small.svg'
-//import {ReactComponent as SmallBlackBoard} from '../../assets/board-black-small.svg'
-
-import WITHEBOARD from '../../assets/board-white-large.svg'
-import BLACKBOARD from '../../assets/board-black-large.svg'
+import WITHEBOARD from '../../assets/board-white.svg'
+import BLACKBOARD from '../../assets/board-black.svg'
 
 import PLAYER1 from '../../assets/player-1.png'
 import PLAYER2 from '../../assets/player-2.png'
