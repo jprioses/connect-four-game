@@ -33,7 +33,7 @@
 
 .rules__content p {
     font-size: 1.6rem;
-    
+    color: var(--color-gray);
     margin: 30px;
 }
 
@@ -46,6 +46,7 @@
     display: flex;
     align-items: center;
     margin: 20px 0px;
+    color: var(--color-gray);
 }
 
 .rules__content ol li span {
