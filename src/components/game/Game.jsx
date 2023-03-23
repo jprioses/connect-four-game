@@ -14,8 +14,6 @@ import { Timer } from '../timer/Timer'
 import { Winner } from '../winner/Winner'
 import { Modal } from '../modal/Modal'
 
-// import PLAYERCPU from '../../assets/player-cpu.png'
-
 const Game = () => {
 
   const width = window.innerWidth
@@ -52,11 +50,6 @@ const Game = () => {
 
         <div className='game__board'>
 
-          
-          {//<LargeWhiteBoard className='white-board'/>
-          //<LargeBlackBoard className='black-board'/>}
-          }       
-          
           <div className='white-board' style={{ backgroundImage: `url(${WITHEBOARD})`}}></div>
           <div className='black-board' style={{ backgroundImage: `url(${BLACKBOARD})`}}></div>
 
