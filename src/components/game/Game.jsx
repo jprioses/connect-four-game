@@ -97,7 +97,7 @@ const Game = () => {
             <p>PAUSE</p>
             <button className='modal__button white-button' onClick={() => setPause(false)}>CONTINUE GAME</button>
             <button className='modal__button white-button' onClick={() => {setPause(false); playAgain(true);}}>RESTART</button>
-            <Link to='/' className='modal__button red-button'>QUIT GAME</Link>
+            <Link to='/' className='modal__button red-button' onClick={() => playAgain(true)}>QUIT GAME</Link>
           </div>
         </Modal> )
       }

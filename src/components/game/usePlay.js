@@ -29,6 +29,7 @@ const usePlay = () => {
         col = null
         row = null
         
+
         for (let index in grid) {
             if (grid[index][colum] === 0) {
                 col = colum
@@ -72,7 +73,7 @@ const usePlay = () => {
 
         //Diagonally up
         row-3 >= 0 && col-3 >= 0 && (grid[row-1][col-1] === player) && (grid[row-2][col-2] === player) && (grid[row-3][col-3] === player) && setWhoWins(player, [[row,col],[row-1,col-1],[row-2,col-2],[row-3,col-3]])
-        row-3 >= 0 && col+3 <= 6 && (grid[row-1][col+1] === player) && (grid[row-2][col+2] === player) && (grid[row-3][col+3] === player) && setWhoWins(player, [[row,col],[row-1,col+1],[row-2,col+2],[row-3,col-3]])
+        row-3 >= 0 && col+3 <= 6 && (grid[row-1][col+1] === player) && (grid[row-2][col+2] === player) && (grid[row-3][col+3] === player) && setWhoWins(player, [[row,col],[row-1,col+1],[row-2,col+2],[row-3,col+3]])
     
         //Diagonally down
         row+3 <= 5 && col-3 >= 0 && (grid[row+1][col-1] === player) && (grid[row+2][col-2] === player) && (grid[row+3][col-3] === player) && setWhoWins(player, [[row,col],[row+1,col-1],[row+2,col-2],[row+3,col-3]])
