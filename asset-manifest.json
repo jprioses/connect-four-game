@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/connect-four-game/static/css/main.2e0d0cd0.css",
-    "main.js": "/connect-four-game/static/js/main.d509ab60.js",
+    "main.js": "/connect-four-game/static/js/main.1ca82104.js",
     "static/media/board-black.svg": "/connect-four-game/static/media/board-black.b99860fbd97ad0aa6c1fd0ff6152baa8.svg",
     "static/media/board-white.svg": "/connect-four-game/static/media/board-white.bc2b55762e7bc4c3a93bd185b93a86bd.svg",
     "static/media/marker-1.svg": "/connect-four-game/static/media/marker-1.faa9e28e9c3ef80e43f6327455c583d7.svg",
@@ -15,10 +15,10 @@
     "static/media/winner-circle.svg": "/connect-four-game/static/media/winner-circle.fa50baf8a44d55672f1cf91dd13d7d64.svg",
     "static/media/ok.svg": "/connect-four-game/static/media/ok.cf0fe5e2a3e63921e6b99764cc82a796.svg",
     "main.2e0d0cd0.css.map": "/connect-four-game/static/css/main.2e0d0cd0.css.map",
-    "main.d509ab60.js.map": "/connect-four-game/static/js/main.d509ab60.js.map"
+    "main.1ca82104.js.map": "/connect-four-game/static/js/main.1ca82104.js.map"
   },
   "entrypoints": [
     "static/css/main.2e0d0cd0.css",
-    "static/js/main.d509ab60.js"
+    "static/js/main.1ca82104.js"
   ]
 }
