@@ -1,5 +1,5 @@
 import React from 'react'
-import WINNER from '../../assets/winner.svg'
+import WINNER from '../../assets/winner.png'
 import './winner.css'
 
 const Winner = ({winner, playAgain}) => {
