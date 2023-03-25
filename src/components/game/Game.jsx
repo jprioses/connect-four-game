@@ -8,16 +8,18 @@ import BLACKBOARD from '../../assets/board-black.svg'
 
 import PLAYER1 from '../../assets/player-1.png'
 import PLAYER2 from '../../assets/player-2.png'
+import PLAYERCPU from '../../assets/player-cpu.png'
+
+
 import { Grid } from '../grid/Grid'
 import { usePlay } from './usePlay'
 import { Timer } from '../timer/Timer'
 import { Winner } from '../winner/Winner'
 import { Modal } from '../modal/Modal'
 
-const Game = () => {
+const Game = ({cpu}) => {
 
   const width = window.innerWidth
-
   const { grid, 
           setNewDisk, 
           player, 
@@ -31,7 +33,9 @@ const Game = () => {
           wait,
           winnerPos,
           pause,
-        setPause } = usePlay()
+          setPause } = usePlay()
+
+  console.log(cpu)
   
   return (
     <div className='container game-container'>
@@ -59,13 +63,14 @@ const Game = () => {
                 wait={wait}
                 player={player}
                 winnerPos={winnerPos}
-                width={width}/>
+                width={width}
+                cpu={cpu}/>
 
         </div>
     
         <article className='player__card player-2-card'>
-          <img src={PLAYER2} alt="" />
-          <h2>PLAYER 2</h2>
+          <img src={(cpu) ? PLAYERCPU: PLAYER2} alt="" />
+          <h2>{(cpu)? 'CPU': 'PLAYER 2'}</h2>
           <p>{player2Wins}</p>
         </article>
 
@@ -73,10 +78,12 @@ const Game = () => {
                             player={player} 
                             setTimerCounter={setTimerCounter}
                             setWhoWins={setWhoWins}
-                            pause={pause}/>}
+                            pause={pause}
+                            cpu={cpu}/>}
 
         { winner && !wait && <Winner  winner={winner} 
-                                      playAgain={playAgain}/>}
+                                      playAgain={playAgain}
+                                      cpu={cpu}/>}
         
       </div>
 
