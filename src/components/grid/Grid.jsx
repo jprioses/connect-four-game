@@ -22,8 +22,8 @@ const Grid = ({grid,setNewDisk, winner, wait, player, winnerPos, width, cpu}) =>
     const gridPositionColumn = [2.85,16.61,30.54,44.46,58.38,72.31,86.23]
 
     useEffect(() => {
-        let col = -false
         cpu && player === 2 && (setNewDisk(getCpuColumnPlay(checkGrid(grid))))
+        // eslint-disable-next-line
     }, [player])
 
     const renderDisk = () => {
