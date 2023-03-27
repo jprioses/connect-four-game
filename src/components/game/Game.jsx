@@ -35,7 +35,6 @@ const Game = ({cpu}) => {
           pause,
           setPause } = usePlay()
 
-  console.log(cpu)
   
   return (
     <div className='container game-container'>

@@ -1,14 +1,17 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {ReactComponent as PLAYER2DISK} from '../../assets/player-2-disk.svg'
 import {ReactComponent as PLAYER1DISK} from '../../assets/player-1-disk.svg'
 import {ReactComponent as MARKER1} from '../../assets/marker-1.svg'
 import {ReactComponent as MARKER2} from '../../assets/marker-2.svg'
 import {ReactComponent as WINNERCIRCLE} from '../../assets/winner-circle.svg'
 
+import { useCpuPlay } from '../game/usePlay'
 import { motion } from 'framer-motion'
 import './grid.css'
 
-const Grid = ({grid,setNewDisk, winner, wait, player, winnerPos, width}) => {
+const Grid = ({grid,setNewDisk, winner, wait, player, winnerPos, width, cpu}) => {
+
+    const {checkGrid, getCpuColumnPlay} = useCpuPlay()
 
     const [hover, setHover] = useState(null)
 
@@ -17,6 +20,11 @@ const Grid = ({grid,setNewDisk, winner, wait, player, winnerPos, width}) => {
 
     const gridPositionRow = [2.74,17.81,32.87,47.94,63.01,78.08]
     const gridPositionColumn = [2.85,16.61,30.54,44.46,58.38,72.31,86.23]
+
+    useEffect(() => {
+        let col = -false
+        cpu && player === 2 && (setNewDisk(getCpuColumnPlay(checkGrid(grid))))
+    }, [player])
 
     const renderDisk = () => {
         let counter = 0
