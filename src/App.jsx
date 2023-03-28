@@ -2,11 +2,20 @@ import {Main} from './components/main/Main';
 import {Game} from './components/game/Game';
 import { Rules } from './components/rules/Rules';
 import { Route, Routes} from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
 
   const [cpu, setCpu] = useState()
+
+  useEffect(() => {
+    setCpu(JSON.parse(window.localStorage.getItem('cpu')));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('cpu', cpu);
+  }, [cpu]);
+
   return (
     <>
       <Routes>

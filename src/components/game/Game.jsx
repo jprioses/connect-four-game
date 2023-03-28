@@ -12,7 +12,7 @@ import PLAYERCPU from '../../assets/player-cpu.png'
 
 
 import { Grid } from '../grid/Grid'
-import { usePlay } from './usePlay'
+import { usePlay } from '../../hooks/usePlay'
 import { Timer } from '../timer/Timer'
 import { Winner } from '../winner/Winner'
 import { Modal } from '../modal/Modal'
@@ -35,7 +35,6 @@ const Game = ({cpu}) => {
           pause,
           setPause } = usePlay()
 
-  
   return (
     <div className='container game-container'>
       <div className='menu__container'>

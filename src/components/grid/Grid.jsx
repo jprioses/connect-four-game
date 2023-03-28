@@ -5,7 +5,7 @@ import {ReactComponent as MARKER1} from '../../assets/marker-1.svg'
 import {ReactComponent as MARKER2} from '../../assets/marker-2.svg'
 import {ReactComponent as WINNERCIRCLE} from '../../assets/winner-circle.svg'
 
-import { useCpuPlay } from '../game/usePlay'
+import { useCpuPlay } from '../../hooks/useCpuPlay'
 import { motion } from 'framer-motion'
 import './grid.css'
 
