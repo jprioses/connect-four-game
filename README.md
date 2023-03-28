@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Connect-four-game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents / Tabla de contenidos
 
-## Available Scripts
+- [Overview / Resumen](#overview)
+- [Built With / Hecho con](#built-with)
+- [Features / Caracteristicas](#features)
+- [Contact / Contacto](#contact)
+- [Acknowledgements / Agradecimientos](#acknowledgements)
 
-In the project directory, you can run:
+## Overview / Resumen
 
-### `npm start`
+- https://jprioses-connect-four.netlify.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- This project is tagged as advanced in Frontend Mentor and is intended for premium users, so I couldn't see the complete requeriments. However, I decided to make it with the tools I had. I did this project to prove my logic, knowledge, and my problem-solving approach at that moment.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To start, I looked at the public images and began to make vectors and designs with Figma on my own. To ensure that the game met all the requirements of the challenge, I found a link from someone else and examined their interactions and designs.
 
-### `npm test`
+In this project, I needed to create an app that allowed users to play with another person or with the machine. So, I decided to first make it for two people and then add some logic for the machine to play as the second player by joining it with the first logic.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It's a straightforward game - you just choose how you want to play and start playing. If you choose to play with the CPU, you will always be playing as the red team. Each player has 30 seconds to make a move; otherwise, the other player wins. Every disk you place will drop to the lowest part of the grid column.
 
-### `npm run build`
+- "I needed to use custom hooks and useEffect to handle state. The useEffect hook was especially important because it helped me connect the logic, timers, and states to the components."
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
