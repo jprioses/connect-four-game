@@ -1,6 +1,6 @@
 # Connect-four-game
 
-![alt text](https://drive.google.com/file/d/1IJ37PPKdO8A0mn2PGSk2Ytxx4kVhOIF_/view?usp=share_link)
+![win](https://user-images.githubusercontent.com/108543859/228317992-98ac180a-d415-4f98-828f-ae6f594c89fe.png)
 
 ## Table of contents / Tabla de contenidos
 
@@ -14,19 +14,19 @@
 
 - https://jprioses-connect-four.netlify.app/
 
-![alt text](https://drive.google.com/file/d/1LcYrRne9U-sGNtwwV_aulFIxeA_3d6uc/view?usp=share_link)
+![main](https://user-images.githubusercontent.com/108543859/228317349-5f5a9364-1dcb-4d3f-91fa-a86e899dd6ae.png)
 
 It's a straightforward game - you just choose how you want to play and start playing. If you choose to play with the CPU, you will always be playing as the red team. Each player has 30 seconds to make a move; otherwise, the other player wins. Every disk you place will drop to the lowest part of the grid column. The one who place 4 disk in row no matter if horizontally, vertically or diagonally.
 
 This project is tagged as advanced in Frontend Mentor and is intended for premium users, so I         couldn't see the complete challenge. However, I decided to make it with the tools I had. I did this  project to prove my logic, knowledge, and my problem-solving approach at that moment.
 
-![alt text](https://drive.google.com/file/d/1v51vhS80cEvKhQS-__th40-eyjxXUJaP/view?usp=share_link)
+![game](https://user-images.githubusercontent.com/108543859/228317913-7bbb6507-8ca3-468d-8af5-df114e13873e.png)
 
 In this project, I needed to create an app that allowed users to play with another person or with the machine. So, I decided to first make it for two people and then add some logic for the machine to play as the second player by joining it with the first logic.
 
 To start, I looked at the public images and began to make vectors and designs with Figma on my own. To ensure that the game met all the requirements of the challenge, I found a link from someone else and examined their interactions and designs.
 
-![alt text](https://drive.google.com/file/d/1sOxJA2z3CfNCGlWJnF3morRcwGBrDJ1i/view?usp=share_link)
+![pause](https://user-images.githubusercontent.com/108543859/228318056-dfbc3723-a9d9-41c9-b8b0-d317cc3fb0d9.png)
 
 "I needed to use custom hooks and useEffect to handle state. The useEffect hook was especially important because it helped me connect the logic, timers, and states to the components."
 
